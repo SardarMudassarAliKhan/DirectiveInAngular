@@ -1,0 +1,18 @@
+<p>built-in-directive works!</p>
+<p *ngIf="true">This is true</p>
+<p *ngIf="false">This is false</p>
+<div *ngFor="let item of items">{{ item }}</div>
+
+<div [ngClass]="{'active': isActive, 'inactive': !isActive}">Dynamic class binding</div>
+<div [ngStyle]="{'color': isActive ? 'blue' : 'red'}">Dynamic style binding</div>
+
+<div [ngSwitch]="value">
+  <div *ngSwitchCase="'a'">Value is 'a'</div>
+  <div *ngSwitchCase="'b'">Value is 'b'</div>
+  <div *ngSwitchDefault>Default case</div>
+</div>
+
+<p appHighlight>Sardar Mudassar Ali Khan</p>
+
+
+
